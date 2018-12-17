@@ -40,7 +40,7 @@ mvn -DtestSuite=HumansTxtStandardTestSuite serenity:aggregate clean verify
 ## output
 (After running this suite)
 Site: target/site/serenity/index.html
-JUnite: target/cucumber.xml
+JUnit: target/cucumber.xml
 ![suite 1 pass report](/images/suite1PassReport.png)
 
 # 2) Humans.txt Secnario Outline Tests
@@ -63,7 +63,7 @@ mvn -DtestSuite=HumansTxtScenarioOutlineTestSuite serenity:aggregate clean verif
 ## output
 (After running this suite)
 Site: target/site/serenity/index.html
-JUnite: target/cucumber.xml
+JUnit: target/cucumber.xml
 ![suite 2 pass segment](/images/suite2PassSegment.png)
 
 # resources
