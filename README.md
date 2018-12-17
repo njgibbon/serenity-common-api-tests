@@ -40,7 +40,7 @@ mvn -DtestSuite=HumansTxtStandardTestSuite serenity:aggregate clean verify
 ## output
 Site: target/site/serenity/index.html
 JUnite: target/cucumber.xml
-![suite 1 pass report](/images/suite1PassResport.png)
+![suite 1 pass report](/images/suite1PassReport.png)
 
 # resources
 ## base
