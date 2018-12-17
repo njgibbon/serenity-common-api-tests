@@ -38,12 +38,36 @@ mvn -DtestSuite=HumansTxtStandardTestSuite serenity:aggregate clean verify
 ```
 
 ## output
+(After running this suite)
 Site: target/site/serenity/index.html
 JUnite: target/cucumber.xml
 ![suite 1 pass report](/images/suite1PassReport.png)
 
+# 2) Humans.txt Secnario Outline Tests
+## test suite description
+This suite will run the same steps as suite 1 but using the Scenario Outline functionality of the framework. 
+Better to reduce feature file lines and perhaps reduce mistakes. 
+But, the scenarios under test need to conform to a pattern without deviation.
+Note the difference in the feature files. 
+
+## files of interest
+Feature: src/test/resources/features/humansTxtScenarioOutline.feature
+Runner: src/test/java/njgibbon/test/serenity/api/runners/HumansTxtScenarioOutlineTestSuite.java
+Steps: src/test/java/njgibbon/test/serenity/api/steps/CommonApiSteps.java
+
+## test command
+```
+mvn -DtestSuite=HumansTxtScenarioOutlineTestSuite serenity:aggregate clean verify
+```
+
+## output
+(After running this suite)
+Site: target/site/serenity/index.html
+JUnite: target/cucumber.xml
+![suite 2 pass segment](/images/suite2PassSegment.png)
+
 # resources
-## base
+base:
 My starting point was the Rest Starter which is a base for API Testing using RestAssured and Serenity. 
 Serenity BDD: https://github.com/serenity-bdd
 Serenity BDD Rest Starter: https://github.com/serenity-bdd/serenity-rest-starter
@@ -57,3 +81,5 @@ CucumberOptions: https://testingneeds.wordpress.com/2015/09/15/junit-runner-with
 Environment property parameterisation:
 https://stackoverflow.com/questions/3868310/how-can-i-change-a-properties-file-in-maven-depending-on-my-profile
 
+## test-context
+wrote using ItelliJ on a 2017 MacBook.
